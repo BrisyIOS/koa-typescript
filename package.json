@@ -1,0 +1,26 @@
+{
+  "name": "demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run serve",
+    "serve": "nodemon dist/server.js",
+    "build": "npm run tslint && npm run build-ts",
+    "build-ts": "tsc",
+    "watch": "npm run tslint && npm run watch-ts",
+    "watch-ts": "tsc -w",
+    "tslint": "tslint -c tslint.json -p tsconfig.json"
+  },
+  "author": "zhangxu",
+  "license": "ISC",
+  "dependencies": {
+    "koa": "^2.5.0"
+  },
+  "devDependencies": {
+    "@types/koa": "^2.0.44",
+    "nodemon": "^1.17.1",
+    "tslint": "^5.9.1",
+    "typescript": "^2.7.2"
+  }
+}
